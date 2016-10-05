@@ -4,13 +4,10 @@
   <title>Stephen Zhao</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="./js/ejs.min.js"></script>
-  <script id="homeEjs" type="text/template" src="./components/home.ejs"></script>
   <script>
   onload = function() {
-    $.getJSON("https://stephen-zhao.github.io/model/home.json", "", function(homeModel) {
-      var html = ejs.render(homeEjs, homeModel);
-      $("#container").innerHTML = html;
-    });
+    var html = new EJS({url: "./components/home.ejs"})
+      .update($("#container"), "https://stephen-zhao.github.io/model/home.json");
   }
   </script>
 </head>
