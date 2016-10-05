@@ -1,0 +1,20 @@
+<!DOCTYPE html lang="en">
+<html>
+<head>
+  <title>Stephen Zhao</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="./js/ejs.min.js"></script>
+  <script id="homeEjs" type="text/template" src="./components/home.ejs"></script>
+  <script>
+  onload = function() {
+    $.getJSON("https://stephen-zhao.github.io/model/home.json", "", function(homeModel) {
+      var html = ejs.render(homeEjs, homeModel);
+      $("#container").innerHTML = html;
+    });
+  }
+  </script>
+</head>
+<body>
+  <div id="container"></div>
+</body>
+</html>

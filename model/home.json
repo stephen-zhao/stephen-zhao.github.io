@@ -1,0 +1,56 @@
+{
+    "page_header_data": 
+    {
+        "navbar_data": 
+        {
+            "something": "wut"
+        },
+        "name": "what"
+    },
+    "list_page_section_data" : [
+    {
+        "section_number": 0,
+        "section_dom_id": "section_profile",
+        "section_name": "profile",
+        "section_variety": "default",
+        "section_content": 
+        {
+
+        }
+    },
+    {
+        "section_number": 1,
+        "section_dom_id": "section_world_line",
+        "section_name": "world_line",
+        "section_variety": "accent_1",
+        "section_content": 
+        {
+
+        }
+    },
+    {
+        "section_number": 2,
+        "section_dom_id": "section_photos",
+        "section_name": "photos",
+        "section_variety": "default",
+        "section_content": 
+        {
+
+        }
+    },
+    {
+        "section_number": 3,
+        "section_dom_id": "section_contact",
+        "section_name": "photos",
+        "section_variety": "default",
+        "section_content": 
+        {
+
+        }
+    }
+    ],
+    "page_footer_data" : 
+    {
+        "copyright" : "COPYCAT HAHA"
+    }
+}
