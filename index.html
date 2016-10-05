@@ -6,8 +6,11 @@
   <script src="./js/ejs.min.js"></script>
   <script>
   onload = function() {
-    var html = new EJS({url: "./components/home.ejs"})
-      .update($("#container"), "https://stephen-zhao.github.io/model/home.json");
+    $.getJSON("https://stephen-zhao.github.io/model/home.json", "", function(homeModel) {
+      ejs.renderFile("./components/home.ejs", homeModel, null, function(err, str) {
+        $("#container").innerHTML = str;
+      });
+    });
   }
   </script>
 </head>
