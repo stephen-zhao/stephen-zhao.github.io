@@ -38,6 +38,10 @@ a {
 .Page_Table {
     height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-collapse: collapse;
 }
 
 .Page_TRHeader {
@@ -164,7 +168,7 @@ a {
     left: 50%;
     top: 50%;
     margin-left: -10rem;
-    margin-top: -10.5rem;
+    margin-top: -10.3rem;
     z-index: 1100;
 }
 
