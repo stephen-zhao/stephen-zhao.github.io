@@ -16,24 +16,7 @@
 	"buffers":
 	[
 		{
-			"file": "/D/projects/stephen-zhao.github.io/index.html",
-			"settings":
-			{
-				"buffer_size": 398,
-				"line_ending": "Windows",
-				"name": "<!DOCTYPE html>"
-			}
-		},
-		{
-			"file": "/D/projects/stephen-zhao.github.io/node_modules/ejs/README.md",
-			"settings":
-			{
-				"buffer_size": 8428,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/D/projects/stephen-zhao.github.io/.gitignore",
+			"file": ".gitignore",
 			"settings":
 			{
 				"buffer_size": 577,
@@ -42,11 +25,62 @@
 			}
 		},
 		{
-			"file": "/D/projects/stephen-zhao.github.io/package.json",
+			"file": "package.json",
 			"settings":
 			{
 				"buffer_size": 705,
-				"line_ending": "Unix"
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html lang=\"en\">\n<html>\n<head>\n  <title>Stephen Zhao</title>\n  <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js\"></script>\n  <script src=\"./js/ejs.min.js\"></script>\n  <script>\n  onload = function() {\n    $.getJSON(\"https://stephen-zhao.github.io/model/home.json\", \"\", function(homeModel) {\n      $.getJSON(\"https://stephen-zhao.github.io/components/home.ejs\", \"\", function(homeEjs)) {\n      ejs.compile(homeEjs, {client: true})(homeModel, null, function())\n        $(\"#container\").html(html);\n      });\n    });\n  }\n  </script>\n</head>\n<body>\n  <div id=\"container\"></div>\n</body>\n</html>",
+			"file": "index.html",
+			"file_size": 570,
+			"file_write_time": 131201108310154963,
+			"settings":
+			{
+				"buffer_size": 624,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/projects/zhaostephen_OLD/server.js",
+			"settings":
+			{
+				"buffer_size": 393,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "model/home.json",
+			"settings":
+			{
+				"buffer_size": 1094,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "components/home.ejs",
+			"settings":
+			{
+				"buffer_size": 267,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "components/page_section_top_jumbo.ejs",
+			"settings":
+			{
+				"buffer_size": 186,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "components/worldline_event.ejs",
+			"settings":
+			{
+				"buffer_size": 69,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -161,10 +195,13 @@
 	[
 		"/D/projects/stephen-zhao.github.io",
 		"/D/projects/stephen-zhao.github.io/components",
-		"/D/projects/stephen-zhao.github.io/node_modules/ejs"
+		"/D/projects/stephen-zhao.github.io/img",
+		"/D/projects/stephen-zhao.github.io/js"
 	],
 	"file_history":
 	[
+		"/D/projects/stephen-zhao.github.io/index.html",
+		"/D/projects/stephen-zhao.github.io/.eslintrc.js",
 		"/D/projects/zhaostephen_v0.2/server.js",
 		"/D/projects/online.screen2ref.wot/.elasticbeanstalk/config.yml",
 		"/D/projects/online.screen2ref.wot/.ebextensions/nodecommand.config",
@@ -290,9 +327,7 @@
 		"/D/projects/SZXT77_modpack/develop/0.9.13.4/part-xvm/res_mods/configs/xvm/szxt77_xvm_config/alpha.xc",
 		"/D/projects/SZXT77_modpack/develop/part-xvm/res_mods/configs/xvm/szxt77_xvm_config/playersPanel.xc",
 		"/D/projects/SZXT77_modpack/release/SZXT77_modpack_0.9.14.1/res_mods/configs/xvm/szxt77_xvm_config/playersPanel.xc",
-		"/D/projects/SZXT77_modpack/develop/part-autoaim/res_mods/0.9.14/scripts/client/gui/mods/mod_autoaim_indicator.json",
-		"/D/projects/SZXT77_modpack/develop/part-autoaim/res_mods/0.9.14/scripts/client/gui/mods/mod_autoaim_indicator.pyc",
-		"/C/Users/Stephen/AppData/Roaming/Sublime Text 3/Packages/User/ColorHighlighter.sublime-settings"
+		"/D/projects/SZXT77_modpack/develop/part-autoaim/res_mods/0.9.14/scripts/client/gui/mods/mod_autoaim_indicator.json"
 	],
 	"find":
 	{
@@ -310,6 +345,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"}",
 			"battleTierN",
 			"51457",
 			"tab",
@@ -360,29 +396,109 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/D/projects/stephen-zhao.github.io/index.html",
+					"file": ".gitignore",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 398,
+						"buffer_size": 577,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								210,
-								210
+								577,
+								577
 							]
 						],
 						"settings":
 						{
-							"auto_name": "<!DOCTYPE html>",
+							"auto_name": "# Logs",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.scan":
+							{
+								"current_ext": "",
+								"current_syntax": "Materialize/Langs/Git",
+								"enabled": false,
+								"last_updated": 1475631753.18
+							},
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material Twilight (SL).tmTheme",
+							"syntax": "Packages/Materialize/Langs/Git.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 705,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								408,
+								408
+							]
+						],
+						"settings":
+						{
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.scan":
+							{
+								"current_ext": ".json",
+								"current_syntax": "Materialize/Langs/npm JSON",
+								"enabled": false,
+								"last_updated": 1475631753.18
+							},
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material Twilight (SL).tmTheme",
+							"syntax": "Packages/Materialize/Langs/npm JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 624,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								492,
+								492
+							]
+						],
+						"settings":
+						{
 							"color_helper.file_palette":
 							[
 							],
@@ -416,7 +532,49 @@
 								],
 								"use_hex_argb": false
 							},
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material Twilight (SL).tmTheme",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/projects/zhaostephen_OLD/server.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 393,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								393,
+								393
+							]
+						],
+						"settings":
+						{
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "Babel/JavaScript (Babel)",
+								"enabled": false,
+								"last_updated": 1475631753.18
+							},
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material Twilight (SL).tmTheme",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -426,20 +584,61 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "/D/projects/stephen-zhao.github.io/node_modules/ejs/README.md",
-					"semi_transient": true,
+					"buffer": 4,
+					"file": "model/home.json",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8428,
+						"buffer_size": 1094,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6399,
-								6400
+								108,
+								108
+							]
+						],
+						"settings":
+						{
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.scan":
+							{
+								"current_ext": ".json",
+								"current_syntax": "JavaScript/JSON",
+								"enabled": false,
+								"last_updated": 1475631753.18
+							},
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material Twilight (SL).tmTheme",
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "components/home.ejs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 267,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								267,
+								267
 							]
 						],
 						"settings":
@@ -460,8 +659,8 @@
 									"hex"
 								],
 								"compress_hex_output": true,
-								"current_ext": ".md",
-								"current_syntax": "Markdown/Markdown",
+								"current_ext": ".ejs",
+								"current_syntax": "EJS/EJS",
 								"enabled": true,
 								"last_updated": 1475631753.18,
 								"scan_completion_scopes":
@@ -477,71 +676,93 @@
 								],
 								"use_hex_argb": false
 							},
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material Twilight (SL).tmTheme",
+							"syntax": "Packages/EJS/EJS.tmLanguage"
 						},
-						"translation.x": -0.0,
-						"translation.y": 4248.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "components/page_section_top_jumbo.ejs",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 186,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.scan":
+							{
+								"allowed_colors":
+								[
+									"rgb",
+									"hex_compressed",
+									"rgba",
+									"hsl",
+									"hsla",
+									"webcolors",
+									"hex"
+								],
+								"compress_hex_output": true,
+								"current_ext": ".ejs",
+								"current_syntax": "EJS/EJS",
+								"enabled": true,
+								"last_updated": 1475631753.18,
+								"scan_completion_scopes":
+								[
+								],
+								"scan_scopes":
+								[
+									"meta.property-list.css -support.type.property-name.css -comment -string",
+									"meta.property-value.css -comment -string",
+									"meta.value.css -comment -string",
+									"meta.tag.inline.any.html string.quoted",
+									"meta.tag.any.html meta.attribute-with-value.style.html"
+								],
+								"use_hex_argb": false
+							},
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material Twilight (SL).tmTheme",
+							"syntax": "Packages/EJS/EJS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "/D/projects/stephen-zhao.github.io/.gitignore",
+					"buffer": 7,
+					"file": "components/worldline_event.ejs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 577,
+						"buffer_size": 69,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								577,
-								577
-							]
-						],
-						"settings":
-						{
-							"auto_name": "# Logs",
-							"color_helper.file_palette":
-							[
-							],
-							"color_helper.scan":
-							{
-								"current_ext": "",
-								"current_syntax": "Materialize/Langs/Git",
-								"enabled": false,
-								"last_updated": 1475631753.18
-							},
-							"syntax": "Packages/Materialize/Langs/Git.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/D/projects/stephen-zhao.github.io/package.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 705,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								408,
-								408
+								69,
+								69
 							]
 						],
 						"settings":
@@ -551,14 +772,36 @@
 							],
 							"color_helper.scan":
 							{
-								"current_ext": ".json",
-								"current_syntax": "Materialize/Langs/npm JSON",
-								"enabled": false,
-								"last_updated": 1475631753.18
+								"allowed_colors":
+								[
+									"rgb",
+									"hex_compressed",
+									"rgba",
+									"hsl",
+									"hsla",
+									"webcolors",
+									"hex"
+								],
+								"compress_hex_output": true,
+								"current_ext": ".ejs",
+								"current_syntax": "EJS/EJS",
+								"enabled": true,
+								"last_updated": 1475631753.18,
+								"scan_completion_scopes":
+								[
+								],
+								"scan_scopes":
+								[
+									"meta.property-list.css -support.type.property-name.css -comment -string",
+									"meta.property-value.css -comment -string",
+									"meta.value.css -comment -string",
+									"meta.tag.inline.any.html string.quoted",
+									"meta.tag.any.html meta.attribute-with-value.style.html"
+								],
+								"use_hex_argb": false
 							},
-							"syntax": "Packages/Materialize/Langs/npm JSON.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material Twilight (SL).tmTheme",
+							"syntax": "Packages/EJS/EJS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
