@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stephen Zhao</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="./js/scripts.js"></script>
   <link rel="stylesheet" type="text/css" href="./css/base.css">
   <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400|Source+Sans+Pro:300,400&subset=latin-ext" rel="stylesheet">
 </head>
@@ -23,11 +24,39 @@
     </div>
   </td>
   </tr>
+  <tr class="Page_TRTopNav">
+  <td class="Page_TD">
+    <div class="TopNav_Div">
+      <ul class="TopNav_UL">
+        <li class="TopNav_LI">
+          <a href="#">
+            <span class="TopNav_Span">mail@zhaostephen.com</span>
+          </a>
+        </li>
+        <li class="TopNav_LI">
+          <a href="#">
+            <span class="TopNav_Span">github</span>
+          </a>
+        </li>
+        <li class="TopNav_LI">
+          <a href="#">
+            <span class="TopNav_Span">link1</span>
+          </a>
+        </li>
+        <li class="TopNav_LI">
+          <a href="#">
+            <span class="TopNav_Span">link2</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </td>
+  </tr>
   <tr class="Page_TRContent">
   <td class="Page_TD">
     <div class="Home_DivContainer">
       <div class="HomeNavToggleUp_Div HomeNavToggle_Div">
-        <a href="#">
+        <a href="#" onclick="homeNavToggleUp_A_onClick(event);">
           <div class="HomeNavToggle_DivA">
               <div class="HomeNavToggleUp_DivArrow HomeNavToggle_DivArrow">
                 <span class="HomeNavToggleUp_SpanArrow HomeNavToggle_SpanArrow">&and;</span>
@@ -46,8 +75,8 @@
       </div>
 
       <div class="HomeNavToggleDown_Div HomeNavToggle_Div">
-        <a href="#">
-          <div class="HOmeNavToggle_DivA">
+        <a href="#" onclick="homeNavToggleDown_A_onClick(event);">
+          <div class="HomeNavToggle_DivA">
             <div class="HomeNavToggleDown_DivArrow HomeNavToggle_DivArrow">
               <span class="HomeNavToggleDown_SpanArrow HomeNavToggle_SpanArrow">&or;</span>
             </div>
