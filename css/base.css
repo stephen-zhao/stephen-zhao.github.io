@@ -31,7 +31,11 @@ a {
 
 /* Container */
 .container.mobile {
-    background-color: #141414;
+/*    background-color: #141414;*/
+    background-image: url("../img/cosmos1-u.jpg");
+    background-position: center;
+    background-size: auto 100%;
+
 }
 
 /* Page Layout */
@@ -104,7 +108,7 @@ a {
 /* Home Container */
 .Home_DivContainer {
     position: relative;
-    background-color: #141414;
+/*    background-color: #141414;*/
     text-align: center;
     height: 100%;
 }
