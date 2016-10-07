@@ -80,6 +80,7 @@ a {
     width: 100%;
     border-collapse: collapse;
     z-index: 1000;
+    -webkit-transform: translateZ(0);
 }
 
 .Page_TRHeader {
@@ -114,6 +115,7 @@ a {
     text-align: center;
     box-shadow: 0 0.2rem 1rem 0.5rem #000000;
     z-index: 2000
+    -webkit-transform: translateZ(0);
 }
 
 .Banner_SpanText {
@@ -161,6 +163,7 @@ a {
     height: 2.5rem;
     margin: 0rem 0rem;
     z-index: 1300;
+    -webkit-transform: translateZ(0);
 }
 
 .HomeNavToggleUp_Div {
@@ -215,6 +218,7 @@ a {
     margin-left: -10rem;
     margin-top: -10.3rem;
     z-index: 1100;
+    -webkit-transform: translateZ(0);
 }
 
 .HomeLogo_DivImage {
