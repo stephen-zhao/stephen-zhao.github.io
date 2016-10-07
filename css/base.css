@@ -74,6 +74,7 @@ a {
     width: 14rem;
     margin: auto;
     text-align: center;
+    box-shadow: 0 1rem 1rem #414949;
 }
 
 .Banner_SpanText {
