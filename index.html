@@ -11,79 +11,85 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="./js/scripts.js"></script>
   <link rel="stylesheet" type="text/css" href="./css/base.css">
+  <link rel="stylesheet" type="text/css" href="./css/universal.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./css/mobile.css">
+  <link rel="stylesheet" type="text/css" href="./css/desktop.css"> -->
   <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700|Source+Sans+Pro:300,400,700&subset=latin-ext" rel="stylesheet">
 </head>
 <body>
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--                 <   MOBILE  >                 -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
   <div class="container mobile">
-  <div class="Page_DivBackground"></div>
-  <table class="Page_Table">
-  <tr class="Page_TRHeader">
-  <td class="Page_TD">
-    <div class="Banner_Div">
-      <div class="Banner_DivText">
-        <a href="./index.html"><span class="Banner_SpanText">Stephen Zhao</span></a>
+  <div class="Page_DivBackground mobile"></div>
+  <table class="Page_Table mobile">
+  <tr class="Page_TRHeader mobile">
+  <td class="Page_TD mobile">
+    <div class="Banner_DivCentre mobile">
+      <div class="Banner_DivText mobile">
+        <a href="./index.html"><span class="Banner_SpanText mobile">Stephen Zhao</span></a>
       </div>
     </div>
   </td>
   </tr>
-  <tr class="Page_TRTopNav">
-  <td class="Page_TD">
-    <div class="TopNav_Div">
-      <ul class="TopNav_UL">
-        <li class="TopNav_LI">
+  <tr class="Page_TRTopNav mobile">
+  <td class="Page_TD mobile">
+    <div class="TopNav_Div TopNav_Div_Home mobile">
+      <ul class="TopNav_UL mobile">
+        <li class="TopNav_LI mobile">
           <a href="mailto:mail@zhaostephen.com">
-            <span class="TopNav_Span">mail@zhaostephen.com &#9993;</span>
+            <span class="TopNav_Span mobile">mail@zhaostephen.com &#9993;</span>
           </a>
         </li>
-        <li class="TopNav_LI">
+        <li class="TopNav_LI mobile">
           <a href="https://github.com/stephen-zhao">
-            <span class="TopNav_Span">GitHub &#8632;</span>
+            <span class="TopNav_Span mobile">GitHub &#8632;</span>
           </a>
         </li>
-        <li class="TopNav_LI">
+        <li class="TopNav_LI mobile">
           <a href="https://ca.linkedin.com/in/stephenzhao">
-            <span class="TopNav_Span">LinkedIn &#8632;</span>
+            <span class="TopNav_Span mobile">LinkedIn &#8632;</span>
           </a>
         </li>
-        <li class="TopNav_LI">
+        <li class="TopNav_LI mobile">
           <a href="https://500px.com/stephen-zhao">
-            <span class="TopNav_Span">500px &#8632;</span>
+            <span class="TopNav_Span mobile">500px &#8632;</span>
           </a>
         </li>
       </ul>
     </div>
   </td>
   </tr>
-  <tr class="Page_TRContent">
-  <td class="Page_TD Page_TDContent">
-    <div class="Home_DivContainer">
-      <div class="HomeNavToggleUp_Div HomeNavToggle_Div">
+  <tr class="Page_TRContent mobile">
+  <td class="Page_TD Page_TDContent mobile">
+    <div class="Home_DivContainer mobile">
+      <div class="HomeNavToggleUp_Div HomeNavToggle_Div mobile">
         <a href="#" onclick="homeNavToggleUp_A_onClick(event);">
-          <div class="HomeNavToggle_DivA">
-              <div class="HomeNavToggleUp_DivArrow HomeNavToggle_DivArrow">
-                <span class="HomeNavToggleUp_SpanArrow HomeNavToggle_SpanArrow">&and;</span>
+          <div class="HomeNavToggle_DivA mobile">
+              <div class="HomeNavToggleUp_DivArrow HomeNavToggle_DivArrow mobile">
+                <span class="HomeNavToggleUp_SpanArrow HomeNavToggle_SpanArrow mobile">&and;</span>
               </div>
-              <div class="HomeNavToggleUp_DivLabel HomeNavToggle_DivLabel">
-                <span class="HomeNavToggleUp_SpanLabel HomeNavToggle_SpanLabel">Where to find me</span>
+              <div class="HomeNavToggleUp_DivLabel HomeNavToggle_DivLabel mobile">
+                <span class="HomeNavToggleUp_SpanLabel HomeNavToggle_SpanLabel mobile">My Links</span>
               </div>
           </div>
         </a>
       </div>
 
-      <div class="HomeLogo_Div">
-        <div class="HomeLogo_DivImage">
-          <img class="HomeLogo_ImgImage" src="./img/stephen-zhao_logo.gif"/>
+      <div class="HomeLogo_Div mobile">
+        <div class="HomeLogo_DivImage mobile">
+          <img class="HomeLogo_ImgImage mobile" src="./img/stephen-zhao_logo.gif"/>
         </div>
       </div>
 
-      <div class="HomeNavToggleDown_Div HomeNavToggle_Div">
+      <div class="HomeNavToggleDown_Div HomeNavToggle_Div mobile">
         <a href="./my_things/index.html" onclick="homeNavToggleDown_A_onClick(event);">
-          <div class="HomeNavToggle_DivA">
-            <div class="HomeNavToggleDown_DivArrow HomeNavToggle_DivArrow">
-              <span class="HomeNavToggleDown_SpanArrow HomeNavToggle_SpanArrow">&or;</span>
+          <div class="HomeNavToggle_DivA mobile">
+            <div class="HomeNavToggleDown_DivArrow HomeNavToggle_DivArrow mobile">
+              <span class="HomeNavToggleDown_SpanArrow HomeNavToggle_SpanArrow mobile">&or;</span>
             </div>
-            <div class="HomeNavToggleDown_DivLabel HomeNavToggle_DivLabel">
-              <span class="HomeNavToggleDown_SpanLabel HomeNavToggle_SpanLabel">What I do</span>
+            <div class="HomeNavToggleDown_DivLabel HomeNavToggle_DivLabel mobile">
+              <span class="HomeNavToggleDown_SpanLabel HomeNavToggle_SpanLabel mobile">My Profile</span>
             </div>
           </div>
         </a>
@@ -93,5 +99,94 @@
   </tr>
   </table>
   </div>
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--                 </  MOBILE  >                 -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--                 <  DESKTOP  >                 -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+<!--   <div class="container desktop">
+  <div class="Page_DivBackground desktop"></div>
+  <table class="Page_Table desktop">
+  <tr class="Page_TRHeader desktop">
+  <td class="Page_TD desktop">
+    <div class="Banner_Div desktop">
+      <div class="Banner_DivText desktop">
+        <a href="./index.html"><span class="Banner_SpanText desktop">Stephen Zhao</span></a>
+      </div>
+    </div>
+  </td>
+  </tr>
+  <tr class="Page_TRTopNav desktop">
+  <td class="Page_TD desktop">
+    <div class="TopNav_Div TopNav_Div_Home desktop">
+      <ul class="TopNav_UL desktop">
+        <li class="TopNav_LI desktop">
+          <a href="mailto:mail@zhaostephen.com">
+            <span class="TopNav_Span desktop">mail@zhaostephen.com &#9993;</span>
+          </a>
+        </li>
+        <li class="TopNav_LI desktop">
+          <a href="https://github.com/stephen-zhao">
+            <span class="TopNav_Span desktop">GitHub &#8632;</span>
+          </a>
+        </li>
+        <li class="TopNav_LI desktop">
+          <a href="https://ca.linkedin.com/in/stephenzhao">
+            <span class="TopNav_Span desktop">LinkedIn &#8632;</span>
+          </a>
+        </li>
+        <li class="TopNav_LI desktop">
+          <a href="https://500px.com/stephen-zhao">
+            <span class="TopNav_Span desktop">500px &#8632;</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </td>
+  </tr>
+  <tr class="Page_TRContent desktop">
+  <td class="Page_TD Page_TDContent desktop">
+    <div class="Home_DivContainer desktop">
+      <div class="HomeNavToggleUp_Div HomeNavToggle_Div desktop">
+        <a href="#" onclick="homeNavToggleUp_A_onClick(event);">
+          <div class="HomeNavToggle_DivA desktop">
+              <div class="HomeNavToggleUp_DivArrow HomeNavToggle_DivArrow desktop">
+                <span class="HomeNavToggleUp_SpanArrow HomeNavToggle_SpanArrow desktop">&and;</span>
+              </div>
+              <div class="HomeNavToggleUp_DivLabel HomeNavToggle_DivLabel desktop">
+                <span class="HomeNavToggleUp_SpanLabel HomeNavToggle_SpanLabel desktop">Where to find me</span>
+              </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="HomeLogo_Div desktop">
+        <div class="HomeLogo_DivImage desktop">
+          <img class="HomeLogo_ImgImage desktop" src="./img/stephen-zhao_logo.gif"/>
+        </div>
+      </div>
+
+      <div class="HomeNavToggleDown_Div HomeNavToggle_Div desktop">
+        <a href="./my_things/index.html" onclick="homeNavToggleDown_A_onClick(event);">
+          <div class="HomeNavToggle_DivA desktop">
+            <div class="HomeNavToggleDown_DivArrow HomeNavToggle_DivArrow desktop">
+              <span class="HomeNavToggleDown_SpanArrow HomeNavToggle_SpanArrow desktop">&or;</span>
+            </div>
+            <div class="HomeNavToggleDown_DivLabel HomeNavToggle_DivLabel desktop">
+              <span class="HomeNavToggleDown_SpanLabel HomeNavToggle_SpanLabel desktop">What I do</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </td>
+  </tr>
+  </table>
+  </div> -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
+  <!--                 </ DESKTOP  >                 -->
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - -->
 </body>
 </html>

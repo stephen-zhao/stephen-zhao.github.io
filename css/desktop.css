@@ -1,0 +1,372 @@
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/********************  OBSOLETE  ********************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+
+@media screen and (min-width: 760px) {
+    .container.desktop {
+        visibility: visible;
+    }
+}
+
+/* Container */
+.container.desktop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/* Page Background */
+.Page_DivBackground.desktop {
+    position: fixed;
+    top: -5%;
+    left: -5%;
+    height: 110%;
+    width: 110%;
+    background-color: #141414;
+    background-image: url("../img/cosmos1-u.jpg");
+    background-position: center;
+    background-size: auto 110%;
+    transition: filter 1s;
+    z-index: -100;
+}
+
+.Page_DivBackgroundDimmer.desktop {
+    filter: brightness(50%) blur(5px);
+}
+
+/* Page Layout */
+.Page_Table.desktop {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    z-index: 1000;
+    -webkit-transform: translateZ(0);
+}
+
+.Page_TRHeader.desktop {
+    height: 3.2rem;
+    vertical-align: top;
+}
+
+.Page_TRTopNav.desktop {
+    height: 0;
+}
+
+.Page_TRContent.desktop {
+    overflow: hidden;
+}
+
+.Page_TD.desktop {
+    padding: 0;
+    text-align: center;
+}
+
+.Page_TDContent.desktop {
+    overflow: hidden;
+}
+
+/* Banner */
+.Banner_Div.desktop {
+    top: 0;
+    padding: 0.5rem 1.5rem;
+    background-color: #f8f8f8;
+    width: 14rem;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 0.2rem 1rem 0.5rem #000000;
+    z-index: 2000
+    -webkit-transform: translateZ(0);
+}   
+
+.Banner_SpanText.desktop {
+    color: #141414;
+    font-family: 'Oxygen', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* Top Nav */
+.TopNav_Div.desktop {
+    position: relative;
+}
+
+.TopNav_Div_Home.desktop {
+    display: none;
+}
+
+.TopNav_Div_MyThings.desktop {
+
+}
+
+.TopNav_UL.desktop {
+    list-style-type: none;
+    margin: 0.8rem 3rem;
+    padding: 0;
+    text-align: center;
+}
+
+.TopNav_LI.desktop {
+    padding: 0.4rem 2rem;
+    display: inline-block;
+}
+
+.TopNav_LI.desktop+.TopNav_LI.desktop {
+    border-left: 0.1rem solid #f8f8f8;
+}
+
+.TopNav_Table.desktop {
+    margin: 0.5rem 2rem;
+    padding: 0;
+    text-align: center;
+    display: inline-table;
+    border-collapse: collapse;
+}
+
+.TopNav_TD.desktop {
+    padding: 0.5rem 2rem;
+}
+
+.TopNav_TD_NE.desktop {
+    border-bottom: 0.1rem solid #f8f8f8;
+    border-left: 0.1rem solid #f8f8f8;
+}
+
+.TopNav_TD_NW.desktop {
+    border-bottom: 0.1rem solid #f8f8f8;
+    border-right: 0.1rem solid #f8f8f8;
+}
+
+.TopNav_TD_SE.desktop {
+    border-top: 0.1rem solid #f8f8f8;
+    border-left: 0.1rem solid #f8f8f8;
+}
+
+.TopNav_TD_SW.desktop {
+    border-top: 0.1rem solid #f8f8f8;
+    border-right: 0.1rem solid #f8f8f8;
+}
+
+/* Home Container */
+.Home_DivContainer.desktop {
+    position: relative;
+/*    background-color: #141414;*/
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+}
+
+/* Home Nav Toggle */
+.HomeNavToggle_Div.desktop {
+    position: absolute;
+    left: 50%;
+    height: 2.5rem;
+    margin: 0rem 0rem;
+    z-index: 1300;
+    -webkit-transform: translateZ(0);
+}
+
+.HomeNavToggleUp_Div.desktop {
+    width: 13rem;
+    margin-left: -6.5rem;
+}
+
+.HomeNavToggleDown_Div.desktop {
+    width: 9.2rem;
+    margin-left: -4.6rem;
+    margin-bottom: 2rem;
+    bottom: 0;
+}
+
+.HomeNavToggle_DivA.desktop {
+    width: 100%;
+    height: 100%;
+}
+
+.HomeNavToggle_DivArrow.desktop {
+    position: absolute;
+    left: 1rem;
+    top: -0.2rem;
+}
+
+.HomeNavToggle_SpanArrow.desktop {
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+.HomeNavToggle_DivLabel.desktop {
+    position: absolute;
+    left: 3.3rem;
+    top: 0.5rem;
+}
+
+.HomeNavToggleUp_DivLabel.desktop {
+}
+
+.HomeNavToggleDown_DivLabel.desktop {
+}
+
+.HomeNavToggle_SpanLabel.desktop {
+    font-size: 1.2rem;
+}
+
+/* Home Logo */
+.HomeLogo_Div.desktop {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -18rem;
+    margin-top: -18.3rem;
+    z-index: 1100;
+    -webkit-transform: translateZ(0);
+}
+
+.HomeLogo_DivImage.desktop {
+}
+
+.HomeLogo_ImgImage.desktop {
+    width: 36rem;
+}
+
+/* MyThings Container */
+.MyThings_DivContainer.desktop {
+    position: relative;
+/*    background-color: #141414;*/
+    display: block;
+    text-align: center;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.MyThings_TableContents.desktop {
+    max-width: 960px;
+    height: 100%;
+    display: inline-table;
+}
+
+/* MyThings Contents */
+.MyThings_TRContentsRow.desktop {
+}
+
+.MyThings_TRContentsRow.desktop+.MyThings_TRContentsRow.desktop {
+    border-top: 0.1rem solid #f8f8f8;
+}
+
+.MyThings_TDContentsCell.desktop {
+    padding: 1.5rem 1rem;
+}
+
+.MyThings_TRContentsRow.desktop:not(:nth-child(1))>.MyThings_TDContentsCell.desktop {
+    border-top: 0.1rem solid #f8f8f8;
+}
+
+.MyThings_SpanContentsText.desktop {
+    color: #f8f8f8;
+}
+
+.MyThings_DivContentsSection.desktop {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+/* MyThings Contents Section: Summary*/
+.MyThings_DivContentsSummarySection.desktop {
+    margin-top: 1rem;
+}
+
+/* MyThings Contents Section: Projects*/
+.MyThings_PContentsProjectsDesc.desktop {
+    padding-left: 1.5rem;
+}
+
+.MyThings_ImgContentsProjectsImg.desktop {
+    width: 100%;
+}
+
+.MyThings_SpanProjectsSkillsList.desktop {
+    font-style: italic;
+}
+
+/* MyThings Contents Section: Experience */
+.MyThings_DivContentsExperienceSection.desktop {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.MyThings_PContentsExperienceDuration.desktop,
+.MyThings_H2ContentsExperienceTitle.desktop,
+.MyThings_PContentsExperienceCompany.desktop {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.MyThings_PContentsExperienceDesc.desktop {
+    color: #f8f8f8;
+}
+
+.MyThings_ULContentsExperienceDescList.desktop {
+    color: #f8f8f8;
+    padding-left: 1.1rem;
+    list-style-type: circle;
+}
+
+.MyThings_PContentsExperienceListItem.desktop {
+    padding-left: 1rem;
+}
+
+.MyThings_SpanExperienceSkillsList.desktop {
+    font-style: italic;
+}
+
+.MyThings_DivContentsExperienceTimelineOpenCircle.desktop {
+    position: absolute;
+    border: 0.1rem solid #f8f8f8;
+    border-radius: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+    margin-left: -1.8rem;
+    margin-top: 0.1rem;
+}
+
+.MyThings_DivContentsExperienceTimelineFilledCircle.desktop {
+    position: absolute;
+    border: 0.1rem solid #f8f8f8;
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+    margin-left: -1.8rem;
+    margin-top: 0.1rem;
+}
+
+.MyThings_DivContentsExperienceTimelineLine.desktop {
+    position: absolute;
+    border-left: 0.1rem solid #f8f8f8;
+}
+
+.MyThings_DivContentsExperienceTimelineLineOver.desktop {
+}
+
+.MyThings_DivContentsExperienceTimelineLineUnder.desktop {
+    height: calc(100% + 1.4rem);
+    margin-left: -1.3rem;
+    margin-top: 1.2rem;
+}

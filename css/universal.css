@@ -1,0 +1,486 @@
+.container.mobile {
+    visibility: visible;
+}
+
+/* Container */
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/* Page Background */
+.Page_DivBackground {
+    position: fixed;
+    top: -5%;
+    left: -5%;
+    height: 110%;
+    width: 110%;
+    background-color: #141414;
+    background-image: url("../img/cosmos1-u.jpg");
+    background-position: center;
+    background-size: auto 100%;
+    transition: filter 1s;
+    z-index: -100;
+    filter: brightness(50%) blur(2px);
+}
+@media screen and (max-width: 599px) {
+    .Page_DivBackground {
+        background-size: auto 100%;
+    }
+}
+@media screen and (min-width: 600px) {
+    .Page_DivBackground {
+        background-size: auto 110%;
+    }
+}
+
+@media screen and (min-width: 1360px) {
+    .Page_DivLogoSide {
+        position: fixed;
+        width: 10rem;
+        height: 10rem;
+        top: 1rem;
+        left: 1rem;
+        background-image: url("../img/stephen-zhao_logo.gif");
+        background-size: auto 100%;
+        background-position: center;
+        z-index: 100;
+    }
+}
+
+.Page_DivBackgroundDimmer {
+    filter: brightness(50%) blur(5px);
+}
+
+/* Page Layout */
+.Page_Table {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    z-index: 1000;
+    -webkit-transform: translateZ(0);
+}
+
+.Page_TRHeader {
+    height: 3.2rem;
+    vertical-align: top;
+}
+
+.Page_TRTopNav {
+    height: 0;
+}
+
+.Page_TRContent {
+    overflow: hidden;
+}
+
+.Page_TD {
+    padding: 0;
+    text-align: center;
+}
+
+.Page_TDContent {
+    overflow: hidden;
+}
+
+/* Banner */
+.Banner_Div {
+    display: inline-block;
+}
+
+.Banner_DivCentre {
+    top: 0;
+    padding: 0.5rem 1.5rem;
+    background-color: #f8f8f8;
+    width: 14rem;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 0.2rem 1rem 0.5rem #000000;
+    z-index: 2000
+    -webkit-transform: translateZ(0);
+}   
+
+.Banner_SpanText {
+    color: #141414;
+    font-family: 'Oxygen', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.Banner_DivLeft,
+.Banner_DivRight {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .Banner_DivLeft,
+    .Banner_DivRight {
+        display: inline-block;
+    }
+    .Banner_SpanLeftText,
+    .Banner_SpanRightText {
+        padding: 0 2rem;
+    }
+}
+
+/* Top Nav */
+.TopNav_Div {
+    position: relative;
+}
+
+.TopNav_Div_Home {
+    display: none;
+}
+
+.TopNav_Div_MyThings {
+
+}
+@media screen and (min-width: 768px) {
+    .TopNav_Div_MyThings {
+        display: none;
+    }
+}
+
+.TopNav_UL {
+    list-style-type: none;
+    margin: 0rem 4rem;
+    padding: 0;
+    text-align: center;
+}
+@media screen and (max-width: 599px) {
+    .TopNav_UL {
+        margin: 0rem 4rem;
+    }
+}
+@media screen and (min-width: 600px) {
+    .TopNav_UL {
+        margin: 0.8rem 3rem;
+    }
+}
+
+.TopNav_LI {
+}
+@media screen and (max-width: 599px) {
+     .TopNav_LI {
+        padding: 0.5rem 0rem;
+    }
+}
+@media screen and (min-width: 600px) {
+    .TopNav_LI {
+        padding: 0.4rem 2rem;
+        display: inline-block;
+    }
+}
+
+.TopNav_LI+.TopNav_LI {
+}
+@media screen and (max-width: 599px) {
+    .TopNav_LI+.TopNav_LI {
+        border-top: 0.1rem solid #f8f8f8;
+    }
+}
+@media screen and (min-width: 600px) {
+    .TopNav_LI+.TopNav_LI {
+        border-left: 0.1rem solid #f8f8f8;
+    }
+}
+
+.TopNav_Table {
+    margin: 0.5rem 2rem;
+    padding: 0;
+    text-align: center;
+    display: inline-table;
+    border-collapse: collapse;
+}
+
+.TopNav_TD {
+    padding: 0.5rem 2rem;
+}
+
+.TopNav_TD_NE {
+    border-bottom: 0.1rem solid #f8f8f8;
+    border-left: 0.1rem solid #f8f8f8;
+}
+
+.TopNav_TD_NW {
+    border-bottom: 0.1rem solid #f8f8f8;
+    border-right: 0.1rem solid #f8f8f8;
+}
+
+.TopNav_TD_SE {
+    border-top: 0.1rem solid #f8f8f8;
+    border-left: 0.1rem solid #f8f8f8;
+}
+
+.TopNav_TD_SW {
+    border-top: 0.1rem solid #f8f8f8;
+    border-right: 0.1rem solid #f8f8f8;
+}
+
+/* Home Container */
+.Home_DivContainer {
+    position: relative;
+/*    background-color: #141414;*/
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+}
+
+/* Home Nav Toggle */
+.HomeNavToggle_Div {
+    position: absolute;
+    left: 50%;
+    height: 2.5rem;
+    margin: 0rem 0rem;
+    z-index: 1300;
+    -webkit-transform: translateZ(0);
+}
+
+.HomeNavToggleUp_Div {
+    width: 13rem;
+    margin-left: -6.5rem;
+    margin-top: 0;
+}
+
+.HomeNavToggleDown_Div {
+    width: 9.2rem;
+    margin-left: -4.6rem;
+    bottom: 0;
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (min-height: 600px) {
+    .HomeNavToggleUp_Div {
+        margin-top: 1rem;
+    }
+    .HomeNavToggleDown_Div {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.HomeNavToggle_DivA {
+    width: 100%;
+    height: 100%;
+}
+
+.HomeNavToggle_DivArrow {
+    position: absolute;
+    left: 1rem;
+    top: -0.2rem;
+}
+
+.HomeNavToggle_SpanArrow {
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+.HomeNavToggle_DivLabel {
+    position: absolute;
+    left: 3.3rem;
+    top: 0.5rem;
+}
+
+.HomeNavToggleUp_DivLabel {
+}
+
+.HomeNavToggleDown_DivLabel {
+}
+
+.HomeNavToggle_SpanLabel {
+    font-size: 1.2rem;
+}
+
+/* Home Logo */
+.HomeLogo_Div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -10rem;
+    margin-top: -10.3rem;
+    z-index: 1100;
+    -webkit-transform: translateZ(0);
+}
+
+.HomeLogo_DivImage {
+}
+
+.HomeLogo_ImgImage {
+    width: 20rem;
+}
+
+@media screen and (max-height: 400px) {
+    .HomeLogo_Div {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -7rem;
+        margin-top: -7.2rem;
+        z-index: 1100;
+        -webkit-transform: translateZ(0);
+    }
+
+    .HomeLogo_DivImage {
+    }
+
+    .HomeLogo_ImgImage {
+        width: 14rem;
+    }
+}
+
+@media screen and (min-width: 600px) and (min-height: 700px) {
+    .HomeLogo_Div {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -18rem;
+        margin-top: -18.3rem;
+        z-index: 1100;
+        -webkit-transform: translateZ(0);
+    }
+
+    .HomeLogo_DivImage {
+    }
+
+    .HomeLogo_ImgImage {
+        width: 36rem;
+    }
+}
+
+/* MyThings Container */
+.MyThings_DivContainer {
+    position: relative;
+/*    background-color: #141414;*/
+    display: block;
+    text-align: center;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.MyThings_TableContents {
+    width: 90%;
+    height: 100%;
+    display: inline-table;
+}
+@media screen and (max-width: 599px) {
+    .MyThings_TableContents {
+    }
+}
+@media screen and (min-width: 600px) {
+    .MyThings_TableContents {
+        max-width: 960px;
+    }
+}
+
+/* MyThings Contents */
+.MyThings_TRContentsRow {
+}
+
+.MyThings_TRContentsRow+.MyThings_TRContentsRow {
+    border-top: 0.1rem solid #f8f8f8;
+}
+
+.MyThings_TDContentsCell {
+    padding: 1.5rem 1rem;
+}
+
+.MyThings_TRContentsRow:not(:nth-child(1))>.MyThings_TDContentsCell {
+    border-top: 0.1rem solid #f8f8f8;
+}
+
+.MyThings_SpanContentsText {
+    color: #f8f8f8;
+}
+
+.MyThings_DivContentsSection {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+/* MyThings Contents Section: Summary*/
+.MyThings_DivContentsSummarySection {
+    margin-top: 1rem;
+}
+
+/* MyThings Contents Section: Projects*/
+.MyThings_PContentsProjectsDesc {
+    padding-left: 1.5rem;
+}
+
+.MyThings_ImgContentsProjectsImg {
+    width: 100%;
+}
+
+.MyThings_SpanProjectsSkillsList {
+    font-style: italic;
+}
+
+/* MyThings Contents Section: Experience */
+.MyThings_DivContentsExperienceSection {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.MyThings_PContentsExperienceDuration,
+.MyThings_H2ContentsExperienceTitle,
+.MyThings_PContentsExperienceCompany {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.MyThings_PContentsExperienceDesc {
+    color: #f8f8f8;
+}
+
+.MyThings_ULContentsExperienceDescList {
+    color: #f8f8f8;
+    padding-left: 1.1rem;
+    list-style-type: circle;
+}
+
+.MyThings_PContentsExperienceListItem {
+    padding-left: 1rem;
+}
+
+.MyThings_SpanExperienceSkillsList {
+    font-style: italic;
+}
+
+.MyThings_DivContentsExperienceTimelineOpenCircle {
+    position: absolute;
+    border: 0.1rem solid #f8f8f8;
+    border-radius: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+    margin-left: -1.8rem;
+    margin-top: 0.1rem;
+}
+
+.MyThings_DivContentsExperienceTimelineFilledCircle {
+    position: absolute;
+    border: 0.1rem solid #f8f8f8;
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+    margin-left: -1.8rem;
+    margin-top: 0.1rem;
+}
+
+.MyThings_DivContentsExperienceTimelineLine {
+    position: absolute;
+    border-left: 0.1rem solid #f8f8f8;
+}
+
+.MyThings_DivContentsExperienceTimelineLineOver {
+}
+
+.MyThings_DivContentsExperienceTimelineLineUnder {
+    height: calc(100% + 1.4rem);
+    margin-left: -1.3rem;
+    margin-top: 1.2rem;
+}
