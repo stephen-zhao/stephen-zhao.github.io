@@ -9,6 +9,7 @@
     left: 0;
     bottom: 0;
     right: 0;
+    height: 100%;
 }
 
 /* Page Background */
@@ -22,9 +23,9 @@
     background-image: url("../img/cosmos1-u.jpg");
     background-position: center;
     background-size: auto 100%;
-    transition: filter 1s;
     z-index: -100;
     filter: brightness(50%) blur(2px);
+    -webkit-filter: brightness(30%) blur(2px);
 }
 @media screen and (max-width: 599px) {
     .Page_DivBackground {
@@ -51,10 +52,6 @@
     }
 }
 
-.Page_DivBackgroundDimmer {
-    filter: brightness(50%) blur(5px);
-}
-
 /* Page Layout */
 .Page_Table {
     position: absolute;
@@ -63,19 +60,21 @@
     border-collapse: collapse;
     z-index: 1000;
     -webkit-transform: translateZ(0);
+    table-layout: fixed;
 }
 
 .Page_TRHeader {
-    height: 3.2rem;
+    height:0;
     vertical-align: top;
 }
 
 .Page_TRTopNav {
-    height: 0;
+    height:0;
 }
 
 .Page_TRContent {
-    overflow: hidden;
+    height:100%;
+    overflow-y: hidden;
 }
 
 .Page_TD {
@@ -83,8 +82,17 @@
     text-align: center;
 }
 
+.Page_TDHeader {
+    height: 3.2rem;
+}
+
+.Page_TDTopNav {
+    height: 0.1rem;
+}
+
 .Page_TDContent {
-    overflow: hidden;
+    height: 0;
+    overflow-y: hidden;
 }
 
 /* Banner */
@@ -356,39 +364,37 @@
     position: relative;
 /*    background-color: #141414;*/
     display: block;
-    text-align: center;
     height: 100%;
     overflow-y: scroll;
 }
 
-.MyThings_TableContents {
+.MyThings_DivContainerContents {
     width: 90%;
     height: 100%;
-    display: inline-table;
+    text-align: left;
+    margin: auto;
 }
 @media screen and (max-width: 599px) {
-    .MyThings_TableContents {
+    .MyThings_DivContainerContents {
     }
 }
 @media screen and (min-width: 600px) {
-    .MyThings_TableContents {
+    .MyThings_DivContainerContents {
         max-width: 960px;
     }
 }
 
 /* MyThings Contents */
-.MyThings_TRContentsRow {
-}
-
-.MyThings_TRContentsRow+.MyThings_TRContentsRow {
-    border-top: 0.1rem solid #f8f8f8;
-}
-
-.MyThings_TDContentsCell {
+.MyThings_DivContentsCell {
     padding: 1.5rem 1rem;
 }
 
-.MyThings_TRContentsRow:not(:nth-child(1))>.MyThings_TDContentsCell {
+.MyThings_DivContentsCell:not(:nth-child(1)) {
+    border-top: 0.1rem solid #f8f8f8;
+}
+
+
+.MyThings_TRContentsRow+.MyThings_TRContentsRow {
     border-top: 0.1rem solid #f8f8f8;
 }
 
