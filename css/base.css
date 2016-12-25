@@ -51,3 +51,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+ul {
+    font-size: 1rem;
+}

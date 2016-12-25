@@ -2,8 +2,8 @@
     visibility: visible;
 }
 
-/* Container */
-.container {
+/* Page */
+.Page {
     position: fixed;
     top: 0;
     left: 0;
@@ -13,7 +13,7 @@
 }
 
 /* Page Background */
-.Page_DivBackground {
+.Page_Background {
     position: fixed;
     top: -5%;
     left: -5%;
@@ -28,12 +28,12 @@
     -webkit-filter: brightness(30%) blur(2px);
 }
 @media screen and (max-width: 599px) {
-    .Page_DivBackground {
+    .Page_Background {
         background-size: auto 100%;
     }
 }
 @media screen and (min-width: 600px) {
-    .Page_DivBackground {
+    .Page_Background {
         background-size: auto 110%;
     }
 }
@@ -52,67 +52,72 @@
     }
 }
 
-/* Page Layout */
-.Page_Table {
+/* Page Container and Layout Items */
+.Page_Container {
     position: absolute;
     height: 100%;
     width: 100%;
     border-collapse: collapse;
     z-index: 1000;
     -webkit-transform: translateZ(0);
-    table-layout: fixed;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+
 }
 
-.Page_TRHeader {
-    height:0;
-    vertical-align: top;
-}
-
-.Page_TRTopNav {
-    height:0;
-}
-
-.Page_TRContent {
-    height:100%;
-    overflow-y: hidden;
-}
-
-.Page_TD {
+.Page_Portion {
     padding: 0;
-    text-align: center;
 }
 
-.Page_TDHeader {
-    height: 3.2rem;
+.Header {
 }
 
-.Page_TDTopNav {
-    height: 0.1rem;
+.TopNav {
 }
 
-.Page_TDContent {
-    height: 0;
-    overflow-y: hidden;
+.HomeContent {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
 }
 
-/* Banner */
-.Banner_Div {
-    display: inline-block;
+/* Header */
+
+.Header_Container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 
-.Banner_DivCentre {
+.Header_DivCentre {
     top: 0;
     padding: 0.5rem 1.5rem;
     background-color: #f8f8f8;
     width: 14rem;
-    margin: auto;
     text-align: center;
     box-shadow: 0 0.2rem 1rem 0.5rem #000000;
     z-index: 2000
     -webkit-transform: translateZ(0);
-}   
+}
 
-.Banner_SpanText {
+.Header_DivLeft,
+.Header_DivRight {
+    display: none;
+}
+
+.Header_SpanText {
     color: #141414;
     font-family: 'Oxygen', sans-serif;
     text-transform: uppercase;
@@ -120,23 +125,22 @@
     font-weight: 700;
 }
 
-.Banner_DivLeft,
-.Banner_DivRight {
-    display: none;
+.Header_SpanSubText {
+    font-size: 1.2rem;
 }
 
 @media screen and (min-width: 768px) {
-    .Banner_DivLeft,
-    .Banner_DivRight {
-        display: inline-block;
+    .Header_DivLeft,
+    .Header_DivRight {
+        display: block;
     }
-    .Banner_SpanLeftText,
-    .Banner_SpanRightText {
+    .Header_SpanLeftText,
+    .Header_SpanRightText {
         padding: 0 2rem;
     }
 }
 
-/* Top Nav */
+/* TopNav */
 .TopNav_Div {
     position: relative;
 }
@@ -146,8 +150,9 @@
 }
 
 .TopNav_Div_MyThings {
-
+    display: none;
 }
+
 @media screen and (min-width: 768px) {
     .TopNav_Div_MyThings {
         display: none;
@@ -160,12 +165,12 @@
     padding: 0;
     text-align: center;
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 719px) {
     .TopNav_UL {
         margin: 0rem 4rem;
     }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 720px) {
     .TopNav_UL {
         margin: 0.8rem 3rem;
     }
@@ -173,12 +178,12 @@
 
 .TopNav_LI {
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 719px) {
      .TopNav_LI {
         padding: 0.5rem 0rem;
     }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 720px) {
     .TopNav_LI {
         padding: 0.4rem 2rem;
         display: inline-block;
@@ -187,62 +192,28 @@
 
 .TopNav_LI+.TopNav_LI {
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 719px) {
     .TopNav_LI+.TopNav_LI {
         border-top: 0.1rem solid #f8f8f8;
     }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 720px) {
     .TopNav_LI+.TopNav_LI {
         border-left: 0.1rem solid #f8f8f8;
     }
 }
 
-.TopNav_Table {
-    margin: 0.5rem 2rem;
-    padding: 0;
-    text-align: center;
-    display: inline-table;
-    border-collapse: collapse;
+.TopNav_Span {
+    font-size: 1rem;
 }
 
-.TopNav_TD {
-    padding: 0.5rem 2rem;
-}
+/* Home Content Portions */
+.HomeContent_Portion {
 
-.TopNav_TD_NE {
-    border-bottom: 0.1rem solid #f8f8f8;
-    border-left: 0.1rem solid #f8f8f8;
-}
-
-.TopNav_TD_NW {
-    border-bottom: 0.1rem solid #f8f8f8;
-    border-right: 0.1rem solid #f8f8f8;
-}
-
-.TopNav_TD_SE {
-    border-top: 0.1rem solid #f8f8f8;
-    border-left: 0.1rem solid #f8f8f8;
-}
-
-.TopNav_TD_SW {
-    border-top: 0.1rem solid #f8f8f8;
-    border-right: 0.1rem solid #f8f8f8;
-}
-
-/* Home Container */
-.Home_DivContainer {
-    position: relative;
-/*    background-color: #141414;*/
-    display: inline-block;
-    text-align: center;
-    height: 100%;
 }
 
 /* Home Nav Toggle */
 .HomeNavToggle_Div {
-    position: absolute;
-    left: 50%;
     height: 2.5rem;
     margin: 0rem 0rem;
     z-index: 1300;
@@ -251,23 +222,18 @@
 
 .HomeNavToggleUp_Div {
     width: 8.6rem;
-    margin-left: -4.3rem;
-    margin-top: 0;
 }
 
 .HomeNavToggleDown_Div {
     width: 9.2rem;
-    margin-left: -4.6rem;
-    bottom: 0;
-    margin-bottom: 0.5rem;
 }
 
 @media screen and (min-height: 600px) {
     .HomeNavToggleUp_Div {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
     .HomeNavToggleDown_Div {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -305,11 +271,6 @@
 
 /* Home Logo */
 .HomeLogo_Div {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -10rem;
-    margin-top: -10.3rem;
     z-index: 1100;
     -webkit-transform: translateZ(0);
 }
@@ -323,11 +284,6 @@
 
 @media screen and (max-height: 400px) {
     .HomeLogo_Div {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        margin-left: -7rem;
-        margin-top: -7.2rem;
         z-index: 1100;
         -webkit-transform: translateZ(0);
     }
@@ -342,11 +298,6 @@
 
 @media screen and (min-width: 600px) and (min-height: 700px) {
     .HomeLogo_Div {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        margin-left: -18rem;
-        margin-top: -18.3rem;
         z-index: 1100;
         -webkit-transform: translateZ(0);
     }

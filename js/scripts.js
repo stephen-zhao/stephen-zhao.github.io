@@ -1,4 +1,5 @@
 var b_homeNavToggleUp_isShow = false;
+var b_mythingsNavToggle_isShow = false;
 
 var homeNavToggleUp_A_onClick = function(e) {
   e.preventDefault();
@@ -27,14 +28,32 @@ var homeNavToggleDown_A_onClick = function(e) {
       b_homeNavToggleUp_isShow = false;
     });
   }
-  $(".Home_DivContainer").stop(true, true).animate({position: "relative", marginTop: "-260%"}, 600, "easeOutExpo", function() {
+  $(".HomeContent").stop(true, true).animate({position: "relative", marginTop: "-260%"}, 600, "easeOutExpo", function() {
     window.location.href = href;
   });
 }
 
+var mythingsNavToggle_A_onClick = function(e) {
+  e.preventDefault();
+  if (b_mythingsNavToggle_isShow) {
+    $(".TopNav_Div_MyThings").stop(true, true).slideUp(1000, "easeOutExpo", function() {
+      b_mythingsNavToggle_isShow = false;
+    });
+    // $(".Page_DivBackground").css({filter: "none", "-webkit-filter": "none"}, 1000, function() {
+    // });
+  }
+  else {
+    $(".TopNav_Div_MyThings").stop(true, true).slideDown(1000, "easeOutExpo", function() {
+      b_mythingsNavToggle_isShow = true;
+    });
+    // $(".Page_DivBackground").css({filter: "blur(2px)", "-webkit-filter": "blur(2px)"}, 1000, function() {
+    // });
+  }
+}
+
 $(function() {
-  $(".Page_TRContent").children().css("opacity", "0");
-  $(".Page_TRContent").children().animate({opacity: 1}, 1500, function() {
+  $(".HomeContent").children().css("opacity", "0");
+  $(".HomeContent").children().animate({opacity: 1}, 1500, function() {
     // idk yet
   });
 });
