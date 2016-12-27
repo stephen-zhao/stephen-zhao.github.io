@@ -24,8 +24,8 @@
     background-position: center;
     background-size: auto 100%;
     z-index: -100;
-    filter: brightness(50%) blur(2px);
-    -webkit-filter: brightness(30%) blur(2px);
+    -webkit-filter: brightness(20%) blur(2px);
+    filter: brightness(20%) blur(2px);
 }
 @media screen and (max-width: 599px) {
     .Page_Background {
@@ -396,8 +396,17 @@
     border-top: 0.1rem solid #f8f8f8;
 }
 
-.MyThings_SpanContentsText {
+.MyThings_ContentsText {
     color: #f8f8f8;
+}
+
+.MyThings_ContentsText > a {
+    color: #aabbf8;
+}
+
+.MyThings_ContentsText > a:hover {
+    text-decoration: underline;
+    text-decoration-style: solid;
 }
 
 .MyThings_DivContentsSection {
