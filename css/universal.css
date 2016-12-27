@@ -105,11 +105,30 @@
     top: 0;
     padding: 0.5rem 1.5rem;
     background-color: #f8f8f8;
-    width: 14rem;
     text-align: center;
     box-shadow: 0 0.2rem 1rem 0.5rem #000000;
     z-index: 2000
     -webkit-transform: translateZ(0);
+}
+
+.Header_DivCentreContainer {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.MyThingsNavToggle_DivA {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-left: 1rem;
+    padding: 0rem 0.55rem 0rem 0.5rem;
+    background-color: #b8b8b8;
+    
 }
 
 .Header_DivLeft,
@@ -155,6 +174,10 @@
 
 @media screen and (min-width: 768px) {
     .TopNav_Div_MyThings {
+        display: none !important;
+    }
+
+    .Header_DivCentre_NavToggleA {
         display: none;
     }
 }
@@ -165,12 +188,12 @@
     padding: 0;
     text-align: center;
 }
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 599px) {
     .TopNav_UL {
         margin: 0rem 4rem;
     }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 600px) {
     .TopNav_UL {
         margin: 0.8rem 3rem;
     }
@@ -178,12 +201,12 @@
 
 .TopNav_LI {
 }
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 599px) {
      .TopNav_LI {
         padding: 0.5rem 0rem;
     }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 600px) {
     .TopNav_LI {
         padding: 0.4rem 2rem;
         display: inline-block;
@@ -192,12 +215,12 @@
 
 .TopNav_LI+.TopNav_LI {
 }
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 599px) {
     .TopNav_LI+.TopNav_LI {
         border-top: 0.1rem solid #f8f8f8;
     }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 600px) {
     .TopNav_LI+.TopNav_LI {
         border-left: 0.1rem solid #f8f8f8;
     }
