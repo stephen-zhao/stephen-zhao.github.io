@@ -21,11 +21,11 @@
 <div class="Page_Container">
   <div class="Page_Portion Header">
     <div class="Header_Container">
-      <div class="Header_DivLeft">
-        <a href="#about"><span class="Header_SpanLeftText Header_SpanSubText">about</span></a>
-        <a href="#experience"><span class="Header_SpanLeftText Header_SpanSubText">experience</span></a>
+      <div class="Header_Portion Header_DivLeft">
+        <a href="#about" class="Header_SpanLeftText Header_SpanSubText">about</a>
+        <a href="#experience" class="Header_SpanLeftText Header_SpanSubText">experience</a>
       </div>
-      <div class="Header_DivCentre">
+      <div class="Header_Portion Header_DivCentre">
         <div class="Header_DivCentreContainer">
           <a href="../index.html"><span class="Header_SpanText">Stephen Zhao</span></a>
           <a href="#" class="Header_DivCentre_NavToggleA" onclick="mythingsNavToggle_A_onClick(event);">
@@ -33,9 +33,9 @@
           </a>
         </div>
       </div>
-      <div class="Header_DivRight">
-        <a href="#projects"><span class="Header_SpanRightText Header_SpanSubText">projects</span></a>
-        <a href="#misc"><span class="Header_SpanRightText Header_SpanSubText">misc</span></a>
+      <div class="Header_Portion Header_DivRight">
+        <a href="#projects" class="Header_SpanRightText Header_SpanSubText">projects</a>
+        <a href="#misc" class="Header_SpanRightText Header_SpanSubText">misc</a>
       </div>
     </div>
   </div><!-- / Page_Portion for Header -->
@@ -74,7 +74,7 @@
           <div class="MyThings_DivContentsSection MyThings_DivContentsSummarySection">
             <h2><span class="MyThings_ContentsText">Who I Am</span></h2>
             <p class="MyThings_PContentsSummaryDesc">
-              <span class="MyThings_ContentsText">I'm Stephen! I'm a sophomore studying <strong>Computer Science</strong> at the <strong>University of Waterloo</strong> in the <a href="https://cs.uwaterloo.ca/">David Cheriton School of Computer Science &#8632;</a>. I'm quite an introverted person; however, I often push myself outside of my comfort zone to seek more exciting opportunities. I appreciate fact-checked, semantically strong, arguments over unjustified garbage. I don't like meat. I almost always prefer covers to originals. I use the tab-key, but only as a shortcut to generate space characters. I watch a bunch of educational youtube (in particular, <a href="https://www.youtube.com/channel/UC2C_jShtL725hvbm1arSV9w">CGP Grey &#8632;</a> and <a href="https://www.youtube.com/channel/UCv_vLHiWVBh_FR9vbeuiY-A">Historia Civilis &#8632;</a>). And I love <a href="https://www.reddit.com/r/ImaginaryCastles">r/ImaginaryCastles &#8632;</a>.</span>
+              <span class="MyThings_ContentsText">I'm Stephen! I'm a sophomore studying <strong>Computer Science</strong> at the <strong>University of Waterloo</strong> in the <a href="https://cs.uwaterloo.ca/">David Cheriton School of Computer Science</a>. I'm quite an introverted person; however, I often push myself outside of my comfort zone to seek more exciting opportunities. I appreciate fact-checked, semantically strong, arguments over unjustified garbage. I don't like meat. I almost always prefer covers to originals. I use the tab-key, but only as a shortcut to generate space characters. I watch a bunch of educational youtube (in particular, <a href="https://www.youtube.com/channel/UC2C_jShtL725hvbm1arSV9w">CGP Grey</a> and <a href="https://www.youtube.com/channel/UCv_vLHiWVBh_FR9vbeuiY-A">Historia Civilis</a>). And I love <a href="https://www.reddit.com/r/ImaginaryCastles">r/ImaginaryCastles</a>.</span>
             </p>
             <h2><span class="MyThings_ContentsText">What I Do</span></h2>
             <p class="MyThings_PContentsSummaryDesc">
@@ -146,28 +146,28 @@
           <a name="projects"></a>
           <h1><span class="MyThings_ContentsText">projects</span></h1>
           <div class="MyThings_DivContentsSection MyThings_DivContentsProjectsSection">
-            <h2 class="MyThings_H2ContentsProjectsTitle"><a href="https://github.com/stephen-zhao/SCStreamToMp3"><span class="MyThings_ContentsText">LiteStreamToMP3 &#8632;</span></a></h2>
+            <h2 class="MyThings_H2ContentsProjectsTitle MyThings_ContentsText"><a href="https://github.com/stephen-zhao/SCStreamToMp3">LiteStreamToMP3</a></h2>
             <p class="MyThings_PContentsProjectsDesc"><span class="MyThings_ContentsText">A .NET application for easily downloading MP3s from SC. It determines the URI of the MP3 resource that would be streamed based on a user-entered webpage, and saves it to a local location.</span></p>
             <p class="MyThings_PContentsProjectsDesc"><span class="MyThings_ContentsText MyThings_SpanProjectsSkillsList">C#/.NET, Windows Forms, Threading, HTTP</span></p>
-            <p class="MyThings_PContentsProjectsDesc"><img class="MyThings_ImgContentsProjectsImg" src="https://camo.githubusercontent.com/7d2a6255257a80028c42b1caa5d957a258d02693/68747470733a2f2f692e6779617a6f2e636f6d2f30626263623031306538363764346434626562396133616666663438383131372e706e67"/></p>
+            <p class="MyThings_PContentsProjectsDesc"><img id="LiteStreamToMP3_img01" class="MyThings_ImgContentsProjectsImg" src="https://camo.githubusercontent.com/7d2a6255257a80028c42b1caa5d957a258d02693/68747470733a2f2f692e6779617a6f2e636f6d2f30626263623031306538363764346434626562396133616666663438383131372e706e67"/></p>
           </div>
           <div class="MyThings_DivContentsSection MyThings_DivContentsProjectsSection">
-            <h2 class="MyThings_H2ContentsProjectsTitle"><a href="http://wot.screen2ref.online/"><span class="MyThings_ContentsText">Screen2Ref &ndash; World of Tanks &#8632;</span></a></h2>
+            <h2 class="MyThings_H2ContentsProjectsTitle MyThings_ContentsText"><a href="http://wot.screen2ref.online/">Screen2Ref &ndash; World of Tanks</a></h2>
             <p class="MyThings_PContentsProjectsDesc"><span class="MyThings_ContentsText">A web app to act as an at-a-glance second-monitor reference for the popular online game, World of Tanks. It currently displays the reload and armour configurations for vehicles filtered by battle tier.</span></p>
             <p class="MyThings_PContentsProjectsDesc"><span class="MyThings_ContentsText MyThings_SpanProjectsSkillsList">React/JSX, Node.js, AWS, MySQL, REST API</span></p>
           </div>
           <div class="MyThings_DivContentsSection MyThings_DivContentsProjectsSection">
-            <h2 class="MyThings_H2ContentsProjectsTitle"><a href="#"><span class="MyThings_ContentsText">This Website</span></a></h2>
+            <h2 class="MyThings_H2ContentsProjectsTitle MyThings_ContentsText"><a href="#">This Website</a></h2>
             <p class="MyThings_PContentsProjectsDesc"><span class="MyThings_ContentsText">My new personal website, designed to focus on adaptive layout for a world dominated by mobile web-browsing. Fun fact: all graphics used on this site were drawn by me!</span></p>
             <p class="MyThings_PContentsProjectsDesc"><span class="MyThings_ContentsText MyThings_SpanProjectsSkillsList">JS/HTML/CSS, front-end design, Photoshop</span></p>
           </div>
           <div class="MyThings_DivContentsSection MyThings_DivContentsProjectsSection">
-            <h2 class="MyThings_H2ContentsProjectsTitle"><a href="#"><span class="MyThings_ContentsText">SepenAnagramica</span></a></h2>
+            <h2 class="MyThings_H2ContentsProjectsTitle MyThings_ContentsText"><a href="#">SepenAnagramica</a></h2>
             <p class="MyThings_PContentsProjectsDesc"><span class="MyThings_ContentsText">A console-based anagram game, similar to the MSN hit "Text Twist": it grabs one word from a dictionary and the player must name all words in the dictionary that are anagrams of all subsets of the characters that form the original word.</span></p>
             <p class="MyThings_PContentsProjectsDesc"><span class="MyThings_ContentsText MyThings_SpanProjectsSkillsList">Python, Threading</span></p>
           </div>
           <div class="MyThings_DivContentsSection MyThings_DivContentsProjectsSection">
-            <h2 class="MyThings_H2ContentsProjectsTitle"><a href="#"><span class="MyThings_ContentsText">Laser Dude</span></a></h2>
+            <h2 class="MyThings_H2ContentsProjectsTitle MyThings_ContentsText"><a href="#">Laser Dude</a></h2>
             <p class="MyThings_PContentsProjectsDesc"><span class="MyThings_ContentsText">A top-down shooter game created using the educational language, Turing. It involved understanding of a game loop and simple text-based user interface design. Game features included a randomly moving "AI" enemy and nifty text animations.</span></p>
             <p class="MyThings_PContentsProjectsDesc"><span class="MyThings_ContentsText MyThings_SpanProjectsSkillsList">Turing, TUI</span></p>
           </div>
@@ -182,7 +182,7 @@
               The '<span style="font-weight:700;color:#678eff;">S</span>' is textured as our blue marble, the Earth. This is meant to indicate the responsibility I feel to bettering our planet. The '<span style="font-weight:700;color:#ff4242;">Z</span>' is textured as a red PCB. This shows my love for technology and computer science.
             </p>
             <p class="MyThings_PContentsSummaryDesc MyThings_ContentsText">
-              The two surround a white core, which represents my fundamental beliefs and the causes I rally behind. I believe that stronger science and technological advancement is the key to bettering quality of life across the world, and that it is a global effort to reach for this continued goal. I believe we must stop human-induced climate change and make emerging technologies globally accessible.In particular, I'm looking forward to the proliferation of self-driving vehicles, the promises of cheaper renewable energy sources (<a href="http://www.independent.co.uk/environment/solar-power-worlds-cheapest-electricity-production-energy-wind-farms-a7477096.html">solar is cheaper than wind now, and the trend is still evident &#8632;</a>), and the endeavors to make internet access a universal right. 
+              The two surround a white core, which represents my fundamental beliefs and the causes I rally behind. I believe that stronger science and technological advancement is the key to bettering quality of life across the world, and that it is a global effort to reach for this continued goal. I believe we must stop human-induced climate change and make emerging technologies globally accessible.In particular, I'm looking forward to the proliferation of self-driving vehicles, the promises of cheaper renewable energy sources (<a href="http://www.independent.co.uk/environment/solar-power-worlds-cheapest-electricity-production-energy-wind-farms-a7477096.html">solar is cheaper than wind now, and the trend is still evident</a>), and the endeavors to make internet access a universal right. 
             </p>
           </div>
         </div>
