@@ -199,12 +199,12 @@ h2 > a:hover {
     padding: 0;
     text-align: center;
 }
-@media screen and (max-width: 689px) {
+@media screen and (max-width: 639px) {
     .TopNav_UL {
         margin: 0rem 4rem;
     }
 }
-@media screen and (min-width: 690px) {
+@media screen and (min-width: 640px) {
     .TopNav_UL {
         margin: 0.8rem 3rem;
     }
@@ -212,12 +212,12 @@ h2 > a:hover {
 
 .TopNav_LI {
 }
-@media screen and (max-width: 689px) {
+@media screen and (max-width: 639px) {
      .TopNav_LI {
         padding: 0.5rem 0rem;
     }
 }
-@media screen and (min-width: 690px) {
+@media screen and (min-width: 640px) {
     .TopNav_LI {
         padding: 0.4rem 2rem;
         display: inline-block;
@@ -226,12 +226,12 @@ h2 > a:hover {
 
 .TopNav_LI+.TopNav_LI {
 }
-@media screen and (max-width: 689px) {
+@media screen and (max-width: 639px) {
     .TopNav_LI+.TopNav_LI {
         border-top: 0.1rem solid #f8f8f8;
     }
 }
-@media screen and (min-width: 690px) {
+@media screen and (min-width: 640px) {
     .TopNav_LI+.TopNav_LI {
         border-left: 0.1rem solid #f8f8f8;
     }
@@ -262,7 +262,7 @@ h2 > a:hover {
     width: 9.2rem;
 }
 
-@media screen and (min-height: 690px) {
+@media screen and (min-height: 640px) {
     .HomeNavToggleUp_Div {
         margin-top: 0.5rem;
     }
