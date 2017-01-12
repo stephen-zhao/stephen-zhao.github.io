@@ -346,29 +346,32 @@ h2 > a:hover {
 }
 
 /* MyThings Container */
+.MyThingsContent {
+    overflow-y: scroll;
+}
+
 .MyThings_DivContainer {
     position: relative;
 /*    background-color: #141414;*/
     display: block;
     height: 100%;
-    overflow-y: scroll;
 }
 
 @media screen and (min-width: 600px) {
-    .MyThings_DivContainer::-webkit-scrollbar {
+    .MyThingsContent::-webkit-scrollbar {
         width: 10px;
     }
 
-    .MyThings_DivContainer::-webkit-scrollbar-track {
+    .MyThingsContent::-webkit-scrollbar-track {
         border-radius: 10px;
     }
      
-    .MyThings_DivContainer::-webkit-scrollbar-thumb {
+    .MyThingsContent::-webkit-scrollbar-thumb {
         border-radius: 10px;
         border: 0.1rem solid #f8f8f8;
     }
 
-    .MyThings_DivContainer::-webkit-scrollbar-button {
+    .MyThingsContent::-webkit-scrollbar-button {
         margin: 5px;
         padding: 5px;
         height: 10px;
