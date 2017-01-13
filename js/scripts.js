@@ -7,15 +7,11 @@ var homeNavToggleUp_A_onClick = function(e) {
     $(".TopNav_Div_Home").stop(true, true).slideUp(1000, "easeOutExpo", function() {
       b_homeNavToggleUp_isShow = false;
     });
-    // $(".Page_DivBackground").css({filter: "none", "-webkit-filter": "none"}, 1000, function() {
-    // });
   }
   else {
     $(".TopNav_Div_Home").stop(true, true).slideDown(1000, "easeOutExpo", function() {
       b_homeNavToggleUp_isShow = true;
     });
-    // $(".Page_DivBackground").css({filter: "blur(2px)", "-webkit-filter": "blur(2px)"}, 1000, function() {
-    // });
   }
 }
 
@@ -40,16 +36,12 @@ var mythingsNavToggle_A_onClick = function(e) {
       b_mythingsNavToggle_isShow = false;
     });
     $(".MyThingsNavToggle_DivA").html("&or;");
-    // $(".Page_DivBackground").css({filter: "none", "-webkit-filter": "none"}, 1000, function() {
-    // });
   }
   else {
     $(".TopNav_Div_MyThings").stop(true, true).slideDown(1000, "easeOutExpo", function() {
       b_mythingsNavToggle_isShow = true;
     });
     $(".MyThingsNavToggle_DivA").html("&and;");
-    // $(".Page_DivBackground").css({filter: "blur(2px)", "-webkit-filter": "blur(2px)"}, 1000, function() {
-    // });
   }
 }
 

@@ -81,17 +81,34 @@ h2 > a:hover {
 .TopNav {
 }
 
-.HomeContent {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-flex-grow: 1;
-    flex-grow: 1;
+@media (orientation:portrait) {
+    .HomeContent {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-flex-grow: 1;
+        flex-grow: 1;
+    }
+}
+
+@media (orientation:landscape) {
+    .HomeContent {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-flex-grow: 1;
+        flex-grow: 1;
+    }
 }
 
 /* Header */
@@ -136,8 +153,7 @@ h2 > a:hover {
 
 .Header_DivLeft > a:hover,
 .Header_DivRight > a:hover {
-    background-color: #b8b8b8;
-    color: #141414;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .Header_DivLeft,
@@ -165,7 +181,7 @@ h2 > a:hover {
     }
     .Header_SpanLeftText,
     .Header_SpanRightText {
-        padding: 0 2rem;
+        padding: 1rem 2rem 0.2rem 2rem;
     }
 }
 
@@ -183,7 +199,7 @@ h2 > a:hover {
     display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .TopNav_Div_MyThings {
         display: none !important;
     }
@@ -199,40 +215,57 @@ h2 > a:hover {
     padding: 0;
     text-align: center;
 }
-@media screen and (max-width: 519px) {
-    .TopNav_UL {
-        margin: 0rem 4rem;
-    }
-}
-@media screen and (min-width: 520px) {
-    .TopNav_UL {
-        margin: 0.8rem 1rem;
-    }
-}
-
 .TopNav_LI {
 }
-@media screen and (max-width: 519px) {
-     .TopNav_LI {
-        padding: 0.5rem 0rem;
-    }
-}
-@media screen and (min-width: 520px) {
-    .TopNav_LI {
-        padding: 0.4rem 2rem;
-        display: inline-block;
-    }
-}
-
 .TopNav_LI+.TopNav_LI {
 }
-@media screen and (max-width: 519px) {
-    .TopNav_LI+.TopNav_LI {
+
+/* for page Home */
+@media (max-width: 619px) and (orientation:portrait) {
+    .p_Home.TopNav_UL {
+        margin: 0rem 4rem;
+    }
+    .p_Home.TopNav_LI {
+        padding: 0.5rem 0rem;
+    }
+    .p_Home.TopNav_LI+.TopNav_LI {
         border-top: 0.1rem solid #f8f8f8;
     }
 }
-@media screen and (min-width: 520px) {
-    .TopNav_LI+.TopNav_LI {
+@media (min-width: 620px) and (orientation:portrait) {
+    .p_Home.TopNav_UL {
+        margin: 0.8rem 1rem;
+    }
+    .p_Home.TopNav_LI {
+        padding: 0.4rem 2rem;
+        display: inline-block;
+    }
+    .p_Home.TopNav_LI+.TopNav_LI {
+        border-left: 0.1rem solid #f8f8f8;
+    }
+}
+
+/* for page MyThings */
+@media (max-width: 519px) {
+    .p_MyThings.TopNav_UL {
+        margin: 0rem 4rem;
+    }
+    .p_MyThings.TopNav_LI {
+        padding: 0.5rem 0rem;
+    }
+    .p_MyThings.TopNav_LI+.TopNav_LI {
+        border-top: 0.1rem solid #f8f8f8;
+    }
+}
+@media (min-width: 520px) {
+    .p_MyThings.TopNav_UL {
+        margin: 0.8rem 1rem;
+    }
+    .p_MyThings.TopNav_LI {
+        padding: 0.4rem 2rem;
+        display: inline-block;
+    }
+    .p_MyThings.TopNav_LI+.TopNav_LI {
         border-left: 0.1rem solid #f8f8f8;
     }
 }
@@ -262,7 +295,7 @@ h2 > a:hover {
     width: 9.2rem;
 }
 
-@media screen and (min-height: 520px) {
+@media (min-height: 520px) {
     .HomeNavToggleUp_Div {
         margin-top: 0.5rem;
     }
@@ -271,7 +304,8 @@ h2 > a:hover {
     }
 }
 
-.HomeNavToggle_DivA {
+.HomeNavToggle_A {
+    display: block;
     width: 100%;
     height: 100%;
     color: #f8f8f8;
@@ -304,6 +338,54 @@ h2 > a:hover {
     font-size: 1.2rem;
 }
 
+@media (orientation:portrait) {
+    .HomeNavToggleUp_DivArrow,.HomeNavToggleDown_DivArrow {
+    }
+    .HomeNavToggleLeft_DivArrow,.HomeNavToggleRight_DivArrow {
+        display: none;
+    }
+}
+
+@media (orientation:landscape) {
+    .HomeNavToggle_Div {
+        height: 100%;
+        margin: 0rem 0rem;
+        z-index: 1300;
+        -webkit-transform: translateZ(0);
+    }
+    .HomeNavToggleUp_DivArrow,.HomeNavToggleDown_DivArrow {
+        display: none;
+    }
+    .HomeNavToggleLeft_DivArrow {
+        left: auto;
+        right: 1rem;
+    }
+    .HomeNavToggleUp_DivLabel {
+        left: auto;
+        right: 3.3rem;
+    }
+    .HomeNavToggle_A {
+        transition: padding 0.5s;
+    }
+    .HomeNavToggle_A:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    .HomeNavToggleUp_Div {
+        margin-top: 0;
+        padding-left: 2rem;
+    }
+    .HomeNavToggleDown_Div {
+        margin-bottom: 0;
+        padding-right: 2rem;
+    }
+    .HomeNavToggleUp_A:hover {
+        padding-left: 3rem;
+    }
+    .HomeNavToggleDown_A:hover {
+        padding-right: 3rem;
+    }
+}
+
 /* Home Logo */
 .HomeLogo_Div {
     z-index: 1100;
@@ -317,7 +399,7 @@ h2 > a:hover {
     width: 20rem;
 }
 
-@media screen and (max-height: 400px) {
+@media (max-height: 400px) {
     .HomeLogo_Div {
         z-index: 1100;
         -webkit-transform: translateZ(0);
@@ -331,7 +413,7 @@ h2 > a:hover {
     }
 }
 
-@media screen and (min-width: 600px) and (min-height: 700px) {
+@media (min-width: 600px) and (min-height: 700px) {
     .HomeLogo_Div {
         z-index: 1100;
         -webkit-transform: translateZ(0);
@@ -357,7 +439,7 @@ h2 > a:hover {
     height: 100%;
 }
 
-@media screen and (min-width: 600px) {
+@media (min-width: 600px) {
     .MyThingsContent::-webkit-scrollbar {
         width: 10px;
     }
@@ -387,11 +469,11 @@ h2 > a:hover {
     text-align: left;
     margin: auto;
 }
-@media screen and (max-width: 599px) {
+@media (max-width: 599px) {
     .MyThings_DivContainerContents {
     }
 }
-@media screen and (min-width: 600px) {
+@media (min-width: 600px) {
     .MyThings_DivContainerContents {
         max-width: 960px;
     }
