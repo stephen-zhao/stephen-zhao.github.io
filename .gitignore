@@ -40,8 +40,13 @@ jspm_packages
 *.sublime-project
 *.sublime-workspace
 
-# don't commit the lock for now
+# don't commit locks for now
 yarn.lock
+package-lock.json
+npm-shrinkwrap.json
 
 # Cached items
 .cache
+
+# Build artifacts
+public
