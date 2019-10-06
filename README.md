@@ -1,6 +1,3 @@
 # stephen-zhao.github.io
-New personal website!
 
-- Aiming to start with a mobile-friendly design
-- Then working towards desktop interface
-- It's all static (for now)
+The site is currently being refreshed to work on the Gatsby framework. It is stil work in progress.
