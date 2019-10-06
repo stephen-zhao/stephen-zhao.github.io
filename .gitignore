@@ -39,3 +39,9 @@ jspm_packages
 # Sublime Text project files
 *.sublime-project
 *.sublime-workspace
+
+# don't commit the lock for now
+yarn.lock
+
+# Cached items
+.cache
