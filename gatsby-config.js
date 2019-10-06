@@ -27,6 +27,7 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // TODO: add personal icon
       },
     },
+    `gatsby-plugin-typescript`,
     // TODO: enable offline functionality
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
