@@ -28,7 +28,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-typescript`,
+    {
+      resolve: `gatsby-plugin-ts-loader`,
+      options: {
+        tslint: false, // TODO: set up tslint
+      },
+    },
     // TODO: enable offline functionality
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
