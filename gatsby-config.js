@@ -27,7 +27,7 @@ module.exports = {
         //icon: `src/images/gatsby-icon.png`, // TODO: add personal icon
       },
     },
-    `gatsby-transformer-typescript-css-modules`,
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-typescript`,
     // TODO: enable offline functionality
     // this (optional) plugin enables Progressive Web App + Offline functionality
