@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/stephen-zhao/stephen-zhao.github.io#readme",
   "devDependencies": {
-    "eslint": "^3.7.1"
+    "eslint": "^6.6.0"
   }
 }
