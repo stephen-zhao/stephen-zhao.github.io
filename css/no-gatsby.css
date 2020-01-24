@@ -67,14 +67,16 @@ ul li:last-child {
   flex-direction: column;
 }
 
-/* ==== Zone ==== */
+/* ==== Zones ==== */
 
 .zone {
   /* positioning as child */
   position: relative;
   align-self: center;
+  width: 80%;
   /* styling */
   color: #e3e3e3;
+  border-radius: 10px;
 }
 
 @media (hover: none) {
@@ -95,7 +97,6 @@ ul li:last-child {
     /* styling */
     background-color: #66666644;
     border: 2px solid #141414;
-    border-radius: 10px;
     color: #cccccc;
     /* transitions */
     transition-duration: 0.2s;
@@ -117,18 +118,17 @@ ul li:last-child {
 
 }
 
-.zone__topleft {
+.zone__top {
   /* positioning as child */
   position: absolute;
   bottom: calc(100% + 2px);
-  left: 10px;
-}
-
-.zone__topright {
-  /* positioning as child */
-  position: absolute;
-  bottom: calc(100%  + 2px);
-  right: 10px;
+  margin: 0 10px;
+  width: calc(100% - 20px);
+  /* layout as parent */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .zone__content-window {
@@ -200,11 +200,18 @@ ul li:last-child {
 
 }
 
+@media (max-width: 500px) {
+
+  .zone.main-zone {
+    width: 100%;
+  }
+
+}
+
 .--fullpage-vertical-within-parent > .zone {
   /* positioning as child */
   min-height: 240px;
-  height: 80%;
-  width: 80%;
+  max-height: calc(90% - 80px);
   margin-top: 15px;
 }
 
@@ -225,16 +232,58 @@ ul li:last-child {
 
 /* ==== Title ==== */
 
+.title {
+  /* positioning as child */
+  position: relative;
+  margin-right: 10px;
+  /* layout as parent */
+  display: flex;
+  flex-direction: row;
+}
+
 .title__thumb {
   /* positioning as child */
   position: relative;
-  top: 24px;
-  display: inline-block;
+  top: 10px;
+  align-self: center;
 }
 
 .title__thumb img {
-  display: inline-block;
   width: 64px;
+}
+
+.title__text {
+  position: relative;
+  bottom: 4px;
+  margin-left: 10px;
+  font-size: 2rem;
+  line-height: 1.6rem;
+  align-self: flex-end;
+}
+
+@media (max-width: 390px) {
+  
+  /* .title {
+    top: 8px;
+  }
+
+  .title__thumb {
+    top: 0px;
+  } */
+  
+  .title__thumb img {
+    width: 48px;
+  }
+
+  .title__text {
+    font-size: 1.8rem;
+    margin-left: 6px;
+  }
+  
+}
+
+@media (max-width: 320px) {
+  
 }
 
 
