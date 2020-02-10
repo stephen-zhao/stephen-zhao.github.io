@@ -55,7 +55,7 @@ ul li:last-child {
 
 .page__container {
   /* positioning as child */
-  flex-basis: 900px;
+  flex-basis: 960px;
   /* layout as parent */
   display: flex;
   flex-direction: column;
