@@ -122,6 +122,7 @@ ul li:last-child {
   bottom: calc(100% + 2px);
   margin: 0 10px;
   width: calc(100% - 20px);
+  z-index: 100;
   /* layout as parent */
   display: flex;
   flex-direction: row;
@@ -129,10 +130,36 @@ ul li:last-child {
   align-items: flex-end;
 }
 
+.zone__scroll-indication.--top {
+  /* styling */
+  background-image: linear-gradient(#aaaaaacc, #aaaaaa22, #aaaaaa00);
+  border-radius: 8px 8px 0 0;
+  display: none;
+  z-index: 80;
+  /* position as child */
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 10%;
+}
+
+.zone__scroll-indication.--bottom {
+  /* styling */
+  background-image: linear-gradient(#aaaaaa00, #aaaaaa22, #aaaaaacc);
+  border-radius: 0 0 8px 8px;
+  z-index: 80;
+  /* position as child */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+}
+
 .zone__content-window {
   /* position as child */
   width: 100%;
   height: 100%;
+  z-index: 40;
   /* layout as parent */
   overflow: auto;
   display: flex;
