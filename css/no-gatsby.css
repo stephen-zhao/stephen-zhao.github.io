@@ -84,7 +84,6 @@ ul li:last-child {
   .zone {
     /* styling */
     background-color: #77777744;
-    border: 2px solid #e3e3e3;
     box-shadow: 0 0 50px #e3e3e344;
     color: #e3e3e3;
   }
@@ -96,7 +95,6 @@ ul li:last-child {
   .zone {
     /* styling */
     background-color: #66666644;
-    border: 2px solid #141414;
     color: #cccccc;
     /* transitions */
     transition-duration: 0.2s;
