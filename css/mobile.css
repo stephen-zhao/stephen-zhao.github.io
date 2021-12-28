@@ -1,0 +1,372 @@
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/********************  OBSOLETE  ********************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+/****************************************************/
+
+@media screen and (max-width: 479px) {
+    .container.mobile {
+        visibility: visible;
+    }
+}
+
+/* Container */
+.container.mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/* Page Background */
+.Page_DivBackground.mobile {
+    position: fixed;
+    top: -5%;
+    left: -5%;
+    height: 110%;
+    width: 110%;
+    background-color: #141414;
+    background-image: url("../img/cosmos1-u.jpg");
+    background-position: center;
+    background-size: auto 100%;
+    transition: filter 1s;
+    z-index: -100;
+    filter: brightness(50%) blur(2px);
+}
+
+.Page_DivBackgroundDimmer.mobile {
+    filter: brightness(50%) blur(5px);
+}
+
+/* Page Layout */
+.Page_Table.mobile {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    z-index: 1000;
+    -webkit-transform: translateZ(0);
+}
+
+.Page_TRHeader.mobile {
+    height: 3.2rem;
+    vertical-align: top;
+}
+
+.Page_TRTopNav.mobile {
+    height: 0;
+}
+
+.Page_TRContent.mobile {
+    overflow: hidden;
+}
+
+.Page_TD.mobile {
+    padding: 0;
+    text-align: center;
+}
+
+.Page_TDContent.mobile {
+    overflow: hidden;
+}
+
+/* Banner */
+.Banner_Div.mobile {
+    top: 0;
+    padding: 0.5rem 1.5rem;
+    background-color: #f8f8f8;
+    width: 14rem;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 0.2rem 1rem 0.5rem #000000;
+    z-index: 2000
+    -webkit-transform: translateZ(0);
+}   
+
+.Banner_SpanText.mobile {
+    color: #141414;
+    font-family: 'Oxygen', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* Top Nav */
+.TopNav_Div.mobile {
+    position: relative;
+}
+
+.TopNav_Div_Home.mobile {
+    display: none;
+}
+
+.TopNav_Div_MyThings.mobile {
+
+}
+
+.TopNav_UL.mobile {
+    list-style-type: none;
+    margin: 0rem 4rem;
+    padding: 0;
+    text-align: center;
+}
+
+.TopNav_LI.mobile {
+    padding: 0.5rem 0rem;
+}
+
+.TopNav_LI.mobile+.TopNav_LI.mobile {
+    border-top: 0.1rem solid #f8f8f8;
+}
+
+.TopNav_Table.mobile {
+    margin: 0.5rem 2rem;
+    padding: 0;
+    text-align: center;
+    display: inline-table;
+    border-collapse: collapse;
+}
+
+.TopNav_TD.mobile {
+    padding: 0.5rem 2rem;
+}
+
+.TopNav_TD_NE.mobile {
+    border-bottom: 0.1rem solid #f8f8f8;
+    border-left: 0.1rem solid #f8f8f8;
+}
+
+.TopNav_TD_NW.mobile {
+    border-bottom: 0.1rem solid #f8f8f8;
+    border-right: 0.1rem solid #f8f8f8;
+}
+
+.TopNav_TD_SE.mobile {
+    border-top: 0.1rem solid #f8f8f8;
+    border-left: 0.1rem solid #f8f8f8;
+}
+
+.TopNav_TD_SW.mobile {
+    border-top: 0.1rem solid #f8f8f8;
+    border-right: 0.1rem solid #f8f8f8;
+}
+
+/* Home Container */
+.Home_DivContainer.mobile {
+    position: relative;
+/*    background-color: #141414;*/
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+}
+
+/* Home Nav Toggle */
+.HomeNavToggle_Div.mobile {
+    position: absolute;
+    left: 50%;
+    height: 2.5rem;
+    margin: 0rem 0rem;
+    z-index: 1300;
+    -webkit-transform: translateZ(0);
+}
+
+.HomeNavToggleUp_Div.mobile {
+    width: 13rem;
+    margin-left: -6.5rem;
+}
+
+.HomeNavToggleDown_Div.mobile {
+    width: 9.2rem;
+    margin-left: -4.6rem;
+    margin-bottom: 0.5rem;
+    bottom: 0;
+}
+
+.HomeNavToggle_DivA.mobile {
+    width: 100%;
+    height: 100%;
+}
+
+.HomeNavToggle_DivArrow.mobile {
+    position: absolute;
+    left: 1rem;
+    top: -0.2rem;
+}
+
+.HomeNavToggle_SpanArrow.mobile {
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+.HomeNavToggle_DivLabel.mobile {
+    position: absolute;
+    left: 3.3rem;
+    top: 0.5rem;
+}
+
+.HomeNavToggleUp_DivLabel.mobile {
+}
+
+.HomeNavToggleDown_DivLabel.mobile {
+}
+
+.HomeNavToggle_SpanLabel.mobile {
+    font-size: 1.2rem;
+}
+
+/* Home Logo */
+.HomeLogo_Div.mobile {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -10rem;
+    margin-top: -10.3rem;
+    z-index: 1100;
+    -webkit-transform: translateZ(0);
+}
+
+.HomeLogo_DivImage.mobile {
+}
+
+.HomeLogo_ImgImage.mobile {
+    width: 20rem;
+}
+
+/* MyThings Container */
+.MyThings_DivContainer.mobile {
+    position: relative;
+/*    background-color: #141414;*/
+    display: block;
+    text-align: center;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.MyThings_TableContents.mobile {
+    width: 90%;
+    height: 100%;
+    display: inline-table;
+}
+
+/* MyThings Contents */
+.MyThings_TRContentsRow.mobile {
+}
+
+.MyThings_TRContentsRow.mobile+.MyThings_TRContentsRow.mobile {
+    border-top: 0.1rem solid #f8f8f8;
+}
+
+.MyThings_TDContentsCell.mobile {
+    padding: 1.5rem 1rem;
+}
+
+.MyThings_TRContentsRow.mobile:not(:nth-child(1))>.MyThings_TDContentsCell.mobile {
+    border-top: 0.1rem solid #f8f8f8;
+}
+
+.MyThings_SpanContentsText.mobile {
+    color: #f8f8f8;
+}
+
+.MyThings_DivContentsSection.mobile {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+/* MyThings Contents Section: Summary*/
+.MyThings_DivContentsSummarySection.mobile {
+    margin-top: 1rem;
+}
+
+/* MyThings Contents Section: Projects*/
+.MyThings_PContentsProjectsDesc.mobile {
+    padding-left: 1.5rem;
+}
+
+.MyThings_ImgContentsProjectsImg.mobile {
+    width: 100%;
+}
+
+.MyThings_SpanProjectsSkillsList.mobile {
+    font-style: italic;
+}
+
+/* MyThings Contents Section: Experience */
+.MyThings_DivContentsExperienceSection.mobile {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.MyThings_PContentsExperienceDuration.mobile,
+.MyThings_H2ContentsExperienceTitle.mobile,
+.MyThings_PContentsExperienceCompany.mobile {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.MyThings_PContentsExperienceDesc.mobile {
+    color: #f8f8f8;
+}
+
+.MyThings_ULContentsExperienceDescList.mobile {
+    color: #f8f8f8;
+    padding-left: 1.1rem;
+    list-style-type: circle;
+}
+
+.MyThings_PContentsExperienceListItem.mobile {
+    padding-left: 1rem;
+}
+
+.MyThings_SpanExperienceSkillsList.mobile {
+    font-style: italic;
+}
+
+.MyThings_DivContentsExperienceTimelineOpenCircle.mobile {
+    position: absolute;
+    border: 0.1rem solid #f8f8f8;
+    border-radius: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+    margin-left: -1.8rem;
+    margin-top: 0.1rem;
+}
+
+.MyThings_DivContentsExperienceTimelineFilledCircle.mobile {
+    position: absolute;
+    border: 0.1rem solid #f8f8f8;
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+    margin-left: -1.8rem;
+    margin-top: 0.1rem;
+}
+
+.MyThings_DivContentsExperienceTimelineLine.mobile {
+    position: absolute;
+    border-left: 0.1rem solid #f8f8f8;
+}
+
+.MyThings_DivContentsExperienceTimelineLineOver.mobile {
+}
+
+.MyThings_DivContentsExperienceTimelineLineUnder.mobile {
+    height: calc(100% + 1.4rem);
+    margin-left: -1.3rem;
+    margin-top: 1.2rem;
+}

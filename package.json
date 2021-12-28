@@ -1,0 +1,30 @@
+{
+  "name": "stephen-zhao.github.io",
+  "version": "1.0.0",
+  "description": "stephen-zhao's personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephen-zhao/stephen-zhao.github.io.git"
+  },
+  "keywords": [
+    "sepen",
+    "sepen77",
+    "Stephen",
+    "Zhao",
+    "Lucas",
+    "Xiaotong"
+  ],
+  "author": "stephen-zhao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stephen-zhao/stephen-zhao.github.io/issues"
+  },
+  "homepage": "https://github.com/stephen-zhao/stephen-zhao.github.io#readme",
+  "devDependencies": {
+    "eslint": "^6.6.0"
+  }
+}
